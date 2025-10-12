@@ -9,6 +9,7 @@ int main()
   cout << "Vvedite storony kvadrata = ";
   cin >> storona;
   cout << "Ploshad vashego kvadrata = " << storona * storona << endl;
+  return 0;
 }
 //ploshad trapecii//
 #include <iostream>
@@ -25,4 +26,5 @@ int main()
   cout << "Vvedite vtoryu storony = ";
   cin >> b;
   cout << "Ploshad trapecii = " << (0.5 * (a + b)) * h << endl;
+  return 0;
 }

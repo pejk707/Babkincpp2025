@@ -9,11 +9,11 @@ float areaSquare(float side) {
 }
 int main() {
   setlocale(LC_ALL, "");
-  float squareSide;
+  float square_side;
   std::cout << "Введи сторону квадрата ";
-  std::cin >> squareSide;
-  if (areaSquare(squareSide)) {
-    std::cout << areaSquare(squareSide) << " - площадь квадрата";
+  std::cin >> square_side;
+  if (areaSquare(square_side)) {
+    std::cout << areaSquare(square_side) << " - площадь квадрата";
   } else {
     std::cout << "Ошибка: в геометрии нет чисел меньше 0 или 0 - размер стороны"
               << std::endl;

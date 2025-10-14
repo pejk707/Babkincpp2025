@@ -1,26 +1,27 @@
 ﻿#include <iostream>
 #include <locale>
-float areaTrapezoid(float bigSide, float smallSide, float height) {
-  if (bigSide > 0 and smallSide > 0 and height > 0) {
-    return 0.5 * (bigSide + smallSide) * height;
+float areaTrapezoid(float big_side, float small_side, float height) {
+  if (big_side > 0 and small_side > 0 and height > 0) {
+    return 0.5 * (big_side + small_side) * height;
   } else {
     return 0;
   }
 }
 int main() {
   setlocale(LC_ALL, "");
-  float trapezoidBigSide;
-  float trapezoidSmallSide;
-  float trapezoidHeight;
+  float trapezoid_big_side;
+  float trapezoid_small_side;
+  float trapezoid_height;
   std::cout << "Введи большую сторону трапеции ";
-  std::cin >> trapezoidBigSide;
+  std::cin >> trapezoid_big_side;
   std::cout << "Введи малую сторону трапеции ";
-  std::cin >> trapezoidSmallSide;
+  std::cin >> trapezoid_small_side;
   std::cout << "Введи высоту сторону трапеции ";
-  std::cin >> trapezoidHeight;
-  if (areaTrapezoid(trapezoidBigSide, trapezoidSmallSide, trapezoidHeight)) {
-    std::cout << areaTrapezoid(trapezoidBigSide, trapezoidSmallSide,
-                               trapezoidHeight)
+  std::cin >> trapezoid_height;
+  if (areaTrapezoid(trapezoid_big_side, trapezoid_small_side,
+                    trapezoid_height)) {
+    std::cout << areaTrapezoid(trapezoid_big_side, trapezoid_small_side,
+                               trapezoid_height)
               << " - площадь трапеции";
   } else {
     std::cout

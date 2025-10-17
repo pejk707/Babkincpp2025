@@ -2,17 +2,17 @@
 
 double squareA(double x)
 {
-    return(x * x);
+  return(x * x);
 }
 
 int main()
 {
-    system("chcp 1251");
-    system("cls");
+  system("chcp 1251");
+  system("cls");
 
-    double x = 10;
+  double x = 10;
 
-    std::cout << "Площадь квадрата: " << squareA(x) << std::endl;
+  std::cout << "Площадь квадрата: " << squareA(x) << std::endl;
 
-    return 0;
+  return 0;
 }

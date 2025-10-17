@@ -12,13 +12,13 @@ std::string convertToOctal(int number) {
 }
 
 // Sample usage
-// #include <cassert>
-// #include <iostream>
-// int main() {
-//     assert((convertToHex(79) == "4F"));
-//
-//     int num;
-//     std::cout << "Enter the number you want to convert: ";
-//     std::cin >> num;
-//     std::cout << std::format("Number {} in hexadecimal is 0x{}, and in octal is 0o{}", num, convertToHex(num), convertToOctal(num));
-// }
+#include <cassert>
+#include <iostream>
+int main() {
+    assert((convertToHex(79) == "4F"));
+
+    int num;
+    std::cout << "Enter the number you want to convert: ";
+    std::cin >> num;
+    std::cout << std::format("Number {} in hexadecimal is 0x{}, and in octal is 0o{}", num, convertToHex(num), convertToOctal(num));
+}

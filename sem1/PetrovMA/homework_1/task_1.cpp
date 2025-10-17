@@ -4,11 +4,11 @@ float squareArea(float side) {
 }
 
 // Sample usage:
-// #include <iostream>
-// int main() {
-//     float side;
-//     std::cout << "Enter the side of a square: ";
-//     std::cin >> side;
-//     std::cout << "Resulting area: " << squareArea(side);
-//     return 0;
-// }
+#include <iostream>
+int main() {
+    float side;
+    std::cout << "Enter the side of a square: ";
+    std::cin >> side;
+    std::cout << "Resulting area: " << squareArea(side);
+    return 0;
+}

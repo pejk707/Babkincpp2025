@@ -1,14 +1,22 @@
+
 #include <iostream>
+#include <string>
+#include <format>
 #pragma once
 
-float sSquare(float side)
+std::string convertToBase(int c)
 {
-    return side * side;
+  std::string result;
+  result += "\nin octal: ";
+  result += std::format("{:o}", c);
+  result += "\nin hexadecimal ";
+  result += std::format("{:x}", c);
+  return result;
 }
 
-// int main()
-// {
-//     float a;
-//     std::cin >> a;
-//     std::cout << sSquare(a);
-// }
+int main()
+{
+  int c;
+  std::cin >> c;
+  std::cout << convertToBase(c);
+}

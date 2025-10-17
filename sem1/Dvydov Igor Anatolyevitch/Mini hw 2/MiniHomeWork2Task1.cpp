@@ -12,17 +12,17 @@ int main() {
 void to16And8System(const int x) {
   std::string result = "";
   const std::string symbols = "0123456789abcdef";
-  int vremX = x;
-  while (vremX) {
-    result = symbols[vremX % 16] + result;
-    vremX /= 16;
+  int temp_x = x;
+  while (temp_x) {
+    result = symbols[temp_x % 16] + result;
+    temp_x /= 16;
   }
   std::cout << "in 16 system " << result << std::endl;
-  vremX = x;
+  temp_x = x;
   result = "";
-  while (vremX) {
-    result = symbols[vremX % 8] + result;
-    vremX /= 8;
+  while (temp_x) {
+    result = symbols[temp_x % 8] + result;
+    temp_x /= 8;
   }
   std::cout << "in 8 system " << result << std::endl;
 }

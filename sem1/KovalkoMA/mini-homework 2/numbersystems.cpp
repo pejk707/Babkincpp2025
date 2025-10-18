@@ -1,29 +1,28 @@
 #include <iostream>
 #include <sstream>
-using namespace std;
 
-std::string decimalToHex(int decimal) {
-    std::stringstream ss;
-    ss << std::hex << decimal;
-    return ss.str();
+std::string decimal_to_hex(int decimal) {
+  std::ostringstream ss;
+  ss << std::hex << decimal;
+  return ss.str();
 }
 
-std::string decimalToOct(int decimal) {
-    std::stringstream ss;
-    ss << std::oct << decimal;
-    return ss.str();
+std::string decimal_to_oct(int decimal) {
+  std::ostringstream ss;
+  ss << std::oct << decimal;
+  return ss.str();
 }
 
 int main() {
-    int n;
-    std::cout << "Enter your decimal value: ";
-    std::cin >> n;
+  int n;
+  std::cout << "Enter your decimal value: ";
+  std::cin >> n;
 
-    std::string hexStr = decimalToHex(n);
-    std::cout << "Hexadecimal value = " << hexStr << std::endl;
+  std::string hex_str = decimal_to_hex(n);
+  std::cout << "Hexadecimal value = " << hex_str << std::endl;
 
-    std::string octStr = decimalToOct(n);
-    std::cout << "Octal value = " << octStr << std::endl;
+  std::string oct_str = decimal_to_oct(n);
+  std::cout << "Octal value = " << oct_str << std::endl;
 
-    return 0;
+  return 0;
 }

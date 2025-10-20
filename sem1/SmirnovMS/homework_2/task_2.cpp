@@ -1,24 +1,15 @@
 #include <iostream>
 
-int main()
-{
-    std::cout << "Enter natural number:\n";
+int main() {
+  std::cout << "Enter number:\n";
 
-    int n = 0;
+  int num = 0;
 
-    std::cin >> n;
-    
-    while (true) {
-        if (n == 1) {
-            std::cout << "The hypothesis is true";
-            break;
-        }
+  std::cin >> num;
 
-        if (n % 2 == 0) {
-            n /= 2;
-        }
-        else {
-            n = ((n * 3) + 1) / 2;
-        }
-    }
+  std::cout << "Number in hexadecimal number system: " << std::hex << num
+            << '\n';
+  std::cout << "Number in octal number system: " << std::oct << num;
+
+  return 0;
 }
